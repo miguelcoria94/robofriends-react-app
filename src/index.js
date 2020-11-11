@@ -5,9 +5,7 @@ import Hello from './Hello.js';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Hello />
-  </React.StrictMode>,
+    <Hello greeting={"Hello React Ninja"} />,
   document.getElementById('root')
 );
 
