@@ -14,6 +14,10 @@ class App extends Component {
         };
     }
 
+    componentDidMount() {
+        this.setState({ robots: robots})
+    }
+
     onSearchChange = (event) => {
         this.setState({ searchfield: event.target.value })
     }
