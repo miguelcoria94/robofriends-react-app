@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import CardList from './CardList';
-import SearchBox from './SearchBox'
-import { robots } from './robots';
+import SearchBox from './SearchBox';
 
 
 
@@ -15,6 +14,7 @@ class App extends Component {
     }
 
     componentDidMount() {
+        fetch('https://jsonplaceholder.typicode.com/users')
         this.setState({ robots: robots})
     }
 
